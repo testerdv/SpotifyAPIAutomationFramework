@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="SpotifyTest" >
+    <parameter name="artistId" value="1vCWHaC5f2uS3yhpwWbIA6"/>
+    <parameter name="albumId" value="0sNOF9WDwhWunNAHPD3Baj"/>
+    <parameter name="albumId_two" value="0sNOF9WDwhWunNAHPD3Baj,6UXCm6bOO4gFlDQZV5yL37"/>
+    <parameter name="albumId_more_than_twenty" value="0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,0sNOF9WDwhWunNAHPD3Baj,"/>
+    <classes>
+     <class name="APITest.Common"/>
+     <class name="APITest.Album"/>
+    <class name="APITest.Artists"/>
+    
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+

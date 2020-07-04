@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Properties>
+	<Property name="logPath">D:/Rajinder/myLogs</Property>
+	</Properties>
+	<Appenders>
+		<Console name="consoleAppender" target="SYSTEM_OUT">
+			<PatternLayout>
+				<pattern>
+					[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+				</pattern> 
+
+			</PatternLayout>
+		</Console>
+		<File name="fileAppender" fileName="${logPath}/APITestFrameworkLogs.log" append="false">
+			<PatternLayout>
+				<pattern>
+					[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+				</pattern> 
+
+			</PatternLayout>
+			
+		
+		</File>
+		
+	</Appenders>
+	<Loggers>
+		<Root level="debug">
+			<AppenderRef ref="consoleAppender"/>
+		</Root>
+         
+        <Logger name="APITest" level="debug">
+        	<AppenderRef ref="fileAppender"/>
+        
+        </Logger> 
+	</Loggers>
+
+</Configuration>
