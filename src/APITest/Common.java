@@ -16,7 +16,7 @@ import io.restassured.specification.RequestSpecification;
 
 public class Common {
     private static Logger logger=LogManager.getLogger(Common.class);	
-	static final String accessToken="BQAPKsEiMc1svkK0CT_aT6MpgetMPJ0SS7Rlzej9WwpaSlSYWk88E_5gT7iF5dshgUpsin8ZcqCUrj0hVqkd6ZUTnCDBSrxHcOoiOyicQ-xhNb1sYt0DkDQ4YVgkv8rRtIGvQ7X7rD5FKCAGyOWGAJ9Yqdp2mvw-tBA2ALEO5A5PwAtlTw";
+	static final String accessToken="YOUR_ACCESS_TOKEN_HERE";
 	
 	@BeforeSuite
 	public void setBaseURI() {
